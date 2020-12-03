@@ -1,54 +1,62 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Uči kroz zabavu</h2>
-    <div class="o_stranici">
-      <h3>
-        MisliBrzo je web stranica na kojoj ćeš moći obogatiti svoje znanje.
-        Ovdje ćemo kroz kvizove, zanimljive činjenice, zagonetke i kratke
-        tekstove testirati vaše znanje. Da bi pratili vaš napredak, molimo vas
-        da se prijavite putem Google-a. Nakon toga, stranica će vas odvesti na
-        početni izbornik gdje ćete moći početi vašu "MisliBrzo" avanturu.
-      </h3>
+    <div class="container_1">
+      <h1>{{ msg }}</h1>
+      <h2>Uči kroz zabavu</h2>
+      <div class="o_stranici">
+        <h3>
+          MisliBrzo je web stranica na kojoj ćeš moći obogatiti svoje znanje.
+          Ovdje ćemo kroz kvizove, zanimljive činjenice, zagonetke i kratke
+          tekstove testirati vaše znanje. Da bi pratili vaš napredak, molimo vas
+          da se prijavite putem Google-a. Nakon toga, stranica će vas odvesti na
+          početni izbornik gdje ćete moći početi vašu "MisliBrzo" avanturu.
+        </h3>
+      </div>
+      <!-- Button za prijavu -->
+      <div class="prijava">
+        <button type="button">Započni</button>
+        <p>Google prijava</p>
+      </div>
+      <div class="ukratko_o_kreatorima_i_projektu">
+        <h4>Ukratko o kreatorima i projektu</h4>
+      </div>
     </div>
-    <!-- Button za prijavu -->
-    <div class="prijava">
-      <button type="button">Započni</button>
-      <p>Google prijava</p>
-    </div>
+    <!-- Drugi dio stranice -->
+    <div class="container_2">
+      <h3>O stranici</h3>
+      <ul>
+        <li>
+          <p>
+            Stranica je napravljena kao projekt za kolegij "Programsko
+            inženjerstvo" akademske godine 2020./2021. kod doc. dr. sc. Nikola
+            Tanković.
+          </p>
+        </li>
 
-    <h3>Ecosystem</h3>
-    <ul>
-      <li>
-        <a href="https://router.vuejs.org" target="_blank" rel="noopener"
-          >vue-router</a
-        >
-      </li>
-      <li>
-        <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-devtools#vue-devtools"
-          target="_blank"
-          rel="noopener"
-          >vue-devtools</a
-        >
-      </li>
-      <li>
-        <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-          rel="noopener"
-          >awesome-vue</a
-        >
-      </li>
-    </ul>
+        <h3>Cilj stranice</h3>
+
+        <li>
+          <p>
+            Naš cilj je našim korisnicima pružiti zabavnu web lokaciju na kojoj
+            će testirati svoje znanje na kvizovima, te naučiti i proširiti
+            znanje sa zabavnim činjenicama, kratkim tekstovima i zagonetkama. Mi
+            mislimo da će kroz našu stranicu svaka osoba moći u roku 10-15min
+            naučiti nešto što nisu možda znali, proširiti već postojeće znanje
+            ili ga samo testirati.
+          </p>
+        </li>
+
+        <h3>O nama</h3>
+
+        <li>
+          <p>
+            Mi smo dva studenta 3.godine Fakulteta Informatike u Puli. Izradili
+            smo ovu stranicu u svrhu projekta, ali isto tako da testiramo naše
+            znanje i sposobnosti.
+          </p>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -76,5 +84,20 @@ li {
 }
 a {
   color: #42b983;
+}
+//Prvi dio zaslona
+.container_1 {
+  height: 1080px;
+}
+.ukratko_o_kreatorima_i_projektu {
+}
+//Drugi dio zaslona
+.container_2 {
+  color: white;
+  height: 1080px;
+  background-color: #ff6902;
+  padding-left: 75px;
+
+  text-align: left;
 }
 </style>
