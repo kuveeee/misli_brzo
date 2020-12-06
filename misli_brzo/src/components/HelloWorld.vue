@@ -12,50 +12,57 @@
           početni izbornik gdje ćete moći početi vašu "MisliBrzo" avanturu.
         </h3>
       </div>
+
       <!-- Button za prijavu -->
       <div class="prijava">
-        <button type="button">Započni</button>
+        <div class="button">
+          <button type="button">Započni</button>
+        </div>
         <p>Google prijava</p>
       </div>
+
       <div class="ukratko_o_kreatorima_i_projektu">
         <h4>Ukratko o kreatorima i projektu</h4>
       </div>
     </div>
+
     <!-- Drugi dio stranice -->
     <div class="container_2">
-      <h3>O stranici</h3>
-      <ul>
-        <li>
-          <p>
-            Stranica je napravljena kao projekt za kolegij "Programsko
-            inženjerstvo" akademske godine 2020./2021. kod doc. dr. sc. Nikola
-            Tanković.
-          </p>
-        </li>
+      <div class="text">
+        <h3>O stranici</h3>
+        <ul>
+          <li>
+            <p>
+              Stranica je napravljena kao projekt za kolegij "Programsko
+              inženjerstvo" akademske godine 2020./2021. kod doc. dr. sc. Nikola
+              Tanković.
+            </p>
+          </li>
 
-        <h3>Cilj stranice</h3>
+          <h3>Cilj stranice</h3>
 
-        <li>
-          <p>
-            Naš cilj je našim korisnicima pružiti zabavnu web lokaciju na kojoj
-            će testirati svoje znanje na kvizovima, te naučiti i proširiti
-            znanje sa zabavnim činjenicama, kratkim tekstovima i zagonetkama. Mi
-            mislimo da će kroz našu stranicu svaka osoba moći u roku 10-15min
-            naučiti nešto što nisu možda znali, proširiti već postojeće znanje
-            ili ga samo testirati.
-          </p>
-        </li>
+          <li>
+            <p>
+              Naš cilj je našim korisnicima pružiti zabavnu web lokaciju na
+              kojoj će testirati svoje znanje na kvizovima, te naučiti i
+              proširiti znanje sa zabavnim činjenicama, kratkim tekstovima i
+              zagonetkama. Mi mislimo da će kroz našu stranicu svaka osoba moći
+              u roku 10-15min naučiti nešto što nisu možda znali, proširiti već
+              postojeće znanje ili ga samo testirati.
+            </p>
+          </li>
 
-        <h3>O nama</h3>
+          <h3>O nama</h3>
 
-        <li>
-          <p>
-            Mi smo dva studenta 3.godine Fakulteta Informatike u Puli. Izradili
-            smo ovu stranicu u svrhu projekta, ali isto tako da testiramo naše
-            znanje i sposobnosti.
-          </p>
-        </li>
-      </ul>
+          <li>
+            <p>
+              Mi smo dva studenta 3.godine Fakulteta Informatike u Puli.
+              Izradili smo ovu stranicu u svrhu projekta, ali isto tako da
+              testiramo naše znanje i sposobnosti.
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -71,6 +78,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
 h3 {
   margin: 40px 0 0;
 }
@@ -89,8 +97,22 @@ a {
 .container_1 {
   height: 1080px;
 }
-.ukratko_o_kreatorima_i_projektu {
+
+.button {
 }
+
+.prijava {
+  padding-top: 100px;
+}
+
+.o_stranici {
+  padding-left: 75px;
+}
+.ukratko_o_kreatorima_i_projektu {
+  position: absolute;
+  bottom: 5px;
+}
+
 //Drugi dio zaslona
 .container_2 {
   color: white;
@@ -99,5 +121,8 @@ a {
   padding-left: 75px;
 
   text-align: left;
+}
+.text {
+  padding-top: 25px;
 }
 </style>
