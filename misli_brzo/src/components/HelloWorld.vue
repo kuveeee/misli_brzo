@@ -98,8 +98,8 @@ a {
   height: 1080px;
 }
 
-.button {
-}
+//<!--.button {
+//}
 
 .prijava {
   padding-top: 100px;
