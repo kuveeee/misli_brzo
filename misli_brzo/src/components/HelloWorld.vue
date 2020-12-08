@@ -2,6 +2,9 @@
   <div class="hello">
     <div class="container_1">
       <h1>{{ msg }}</h1>
+      <div class="controller_slika">
+        <img src="@/assets/game-controller.svg" alt="Image alt" />
+      </div>
       <h2>Uči kroz zabavu</h2>
       <div class="o_stranici">
         <h3>
@@ -76,15 +79,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h1{
-  font-size: 100px;
-  color:#1F1235;
-}
-
-h2{
-  font-size: 45px;
-  color: #1B1425;
-}
 
 h3 {
   margin: 40px 0 0;
@@ -106,6 +100,24 @@ a {
 //Prvi dio zaslona //Prvi dio zaslona //Prvi dio zaslona //Prvi dio zaslona
 .container_1 {
   height: 1080px;
+}
+
+//MisliBrzo naslov
+h1{
+  font-size: 100px;
+  color:#1F1235;
+}
+
+//Uci kroz zabavu podnaslov
+h2{
+  font-size: 45px;
+  color: #1B1425;
+}
+
+//Slika gaming controllera
+.controller_slika{
+  width: 10%;
+  transform: rotate(-30deg);
 }
 
 //<!--.button {
