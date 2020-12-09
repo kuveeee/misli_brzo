@@ -3,16 +3,18 @@
     <div class="container_1">
       <h1>{{ msg }}</h1>
       <div class="controller_slika">
-        <img src="@/assets/game-controller.svg" alt="Image alt" />
+        <img src="@/assets/game-controller.svg" alt="Game controller image" />
       </div>
       <h2>Uči kroz zabavu</h2>
       <div class="o_stranici">
         <h3>
-          MisliBrzo je web stranica na kojoj ćeš moći obogatiti svoje zanje <br>
+          MisliBrzo je web stranica na kojoj ćeš moći obogatiti svoje zanje
+          <br />
           Ovdje ćemo kroz kvizove, zanimljive činjenice, zagonetke i kratke
-          tekstove testirati vaše znanje. <br>Da bi pratili vaš napredak, molimo vas
-          da se prijavite putem Google-a. Nakon toga,<br>stranica će vas odvesti na
-          početni izbornik gdje ćete moći početi vašu "MisliBrzo" avanturu.
+          tekstove testirati vaše znanje. <br />Da bi pratili vaš napredak,
+          molimo vas da se prijavite putem Google-a. Nakon toga,<br />stranica
+          će vas odvesti na početni izbornik gdje ćete moći početi vašu
+          "MisliBrzo" avanturu.
         </h3>
       </div>
 
@@ -33,7 +35,7 @@
     <div class="container_2">
       <div class="text">
         <ul>
-        <h5>O stranici</h5>
+          <h5>O stranici</h5>
           <li>
             <p>
               Stranica je napravljena kao projekt za kolegij "Programsko
@@ -42,7 +44,7 @@
             </p>
           </li>
 
-        <h5>Cilj stranice</h5>
+          <h5>Cilj stranice</h5>
           <li>
             <p>
               Naš cilj je našim korisnicima pružiti zabavnu web lokaciju na
@@ -64,6 +66,78 @@
           </li>
         </ul>
       </div>
+      <footer class="page-footer font-small blue pt-4">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>
+            Here you can use rows and columns to organize your footer content.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3" />
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
     </div>
   </div>
 </template>
@@ -79,10 +153,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
 h3 {
   margin: 40px 0 0;
-  font-size:20px;
+  font-size: 20px;
   color: #000000;
 }
 ul {
@@ -103,19 +176,19 @@ a {
 }
 
 //MisliBrzo naslov
-h1{
+h1 {
   font-size: 100px;
-  color:#1F1235;
+  color: #1f1235;
 }
 
 //Uci kroz zabavu podnaslov
-h2{
+h2 {
   font-size: 45px;
-  color: #1B1425;
+  color: #1b1425;
 }
 
 //Slika gaming controllera
-.controller_slika{
+.controller_slika {
   width: 10%;
   transform: rotate(-30deg);
 }
@@ -149,8 +222,8 @@ h2{
 }
 
 // h5 - podnaslovi (O stranici, Cilj stranice, O nama)
-h5{
-  font-size:35px;
+h5 {
+  font-size: 35px;
 }
 
 .text {
