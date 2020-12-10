@@ -25,7 +25,6 @@
         </div>
         <p>Google prijava</p>
       </div>
-
       <div class="ukratko_o_kreatorima_i_projektu">
         <h4>Ukratko o kreatorima i projektu</h4>
       </div>
@@ -66,7 +65,6 @@
           </li>
         </ul>
       </div>
-      <!-- Mjesto za footer (privremeno) -->
     </div>
   </div>
 </template>
