@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div class="container_1">
-      <h1>{{ msg }}</h1>
+    <h1>{{ msg }}</h1>
       <div class="controller_slika">
         <img src="@/assets/game-controller.svg" alt="Game controller image" />
       </div>

@@ -2,11 +2,11 @@
   <div class="home">
     <div class="hello">
     <div class="container_1">
-      <h1>MisliBrzo</h1>
+      <h1><strong>MisliBrzo</strong></h1>
       <div class="controller_slika">
         <img src="@/assets/game-controller.svg" alt="Game controller image" />
       </div>
-      <h2>Uči kroz zabavu</h2>
+      <h2><strong>Uči kroz zabavu</strong></h2>
       <div class="o_stranici">
         <h3>
           MisliBrzo je web stranica na kojoj ćeš moći obogatiti svoje zanje
@@ -86,11 +86,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-  font-size: 20px;
-  color: #000000;
-}
 ul {
   list-style-type: none;
   padding: 0;
@@ -110,7 +105,7 @@ a {
 
 //MisliBrzo naslov
 h1 {
-  font-size: 100px;
+  font-size: 110px;
   color: #1f1235;
 }
 
@@ -118,6 +113,17 @@ h1 {
 h2 {
   font-size: 45px;
   color: #1b1425;
+}
+
+h3 {
+  margin: 40px 0 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+// h5 - podnaslovi (O stranici, Cilj stranice, O nama)
+h5 {
+  font-size: 35px;
 }
 
 //Slika gaming controllera
@@ -152,11 +158,6 @@ h2 {
   padding-right: 80px;
   font-size: 20px;
   text-align: left;
-}
-
-// h5 - podnaslovi (O stranici, Cilj stranice, O nama)
-h5 {
-  font-size: 35px;
 }
 
 .text {
