@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <HelloWorld msg="MisliBrzo"/>
+    <footer/>
   </div>
 </template>
 
@@ -13,7 +14,7 @@ export default {
   name: 'Home',
   components: {
     HelloWorld,
-    footer
-  }
+    footer,
+  },
 }
 </script>
