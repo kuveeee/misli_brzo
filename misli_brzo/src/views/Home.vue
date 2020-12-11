@@ -66,9 +66,11 @@
           </li>
         </ul>
       </div>
+      <!-- Footer -->
+      <Footer/>
     </div>
   </div>
-  </div>
+</div>
 </template>
 
 <script>
