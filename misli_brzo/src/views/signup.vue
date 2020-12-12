@@ -56,9 +56,9 @@ export default {
   name: "Signup",
   data() {
     return {
-      username: "",
-      password: "",
-      passwordRepeat: "",
+      username: '',
+      password: '',
+      passwordRepeat: '',
     };
   },
   methods: {

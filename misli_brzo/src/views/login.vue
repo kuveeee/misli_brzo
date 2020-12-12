@@ -30,7 +30,7 @@
                 placeholder="Password"
               />
             </div>
-            <button type="button" @click="signup" class="btn btn-primary">
+            <button type="button" @click="login" class="btn btn-primary">
               Submit
             </button>
           </form>
@@ -43,7 +43,6 @@
 
 <script>
 import { firebase } from "@/firebase";
-
 export default {
   name: "Login",
   data() {
