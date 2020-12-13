@@ -44,7 +44,7 @@
 <script>
 import { firebase } from "@/firebase";
 export default {
-  name: "Login",
+  name: "login",
   data() {
     return {
       username: "",
@@ -53,18 +53,17 @@ export default {
   },
   methods: {
     login() {
-      firebase.auth();
       firebase
         .auth()
-        .signInWithEmailAndPassword(email, password)
-        .then((user) => {
-          // Signed in
-          // ...
+        .signInWithEmailAndPassword(this.username, this.password)
+        .then(function() {
+          console.log("Uspješna prijava");
+          window.location = '/about' //Redirectanje na About stranicu nakon uspješne prijave
         })
-        .catch((error) => {
-          var errorCode = error.code;
-          var errorMessage = error.message;
+        .catch(function() {
+          console.error("Doslo je do greske", error);
         });
+      console.log("Nastavak");
     },
   },
 };
