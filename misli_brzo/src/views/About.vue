@@ -4,7 +4,44 @@
     <div class="prvi_blok">
       <h1><b>Bok, Korisnik</b></h1>
       <br />
-      <h2>Zaigraj kviz.<br />Odaberi jednu od ponuđenih tema</h2>
+      <h2>Zaigraj kviz,<br />odaberi jednu od ponuđenih tema</h2>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="col-md-3">
+            <div class="col-sm-3">
+              <img
+                src="@/assets/tema_filmovi.jpg"
+                class="rounded float-left"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="col-sm-3">
+            <img
+              src="@/assets/tema_povijest.jpg"
+              class="rounded float-left"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <img
+            src="@/assets/tema_formula_1.jpg"
+            class=" float-left"
+            alt="Responsive image"
+          />
+        </div>
+        <div class="col-xl-3">
+          <img
+            src="@/assets/tema_tehnologija.jpg"
+            class=" float-left"
+            alt="Responsive image"
+          />
+        </div>
+      </div>
 
       <div class="teme_kvizova">
         <img
@@ -67,7 +104,7 @@
         </div>
       </div>
       <!-- Footer -->
-      <Footer/>
+      <Footer />
     </div>
   </div>
 </template>
@@ -75,11 +112,10 @@
 <script>
 import Footer from "@/components/footer.vue";
 export default {
-  components :{
+  components: {
     Footer,
   },
-  
-}
+};
 </script>
 
 <style scoped lang="scss">
