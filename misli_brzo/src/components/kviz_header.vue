@@ -1,9 +1,9 @@
 <template>
-<h1>MisliBrzo</h1>
+<h1>Component "kviz_header" is here</h1>
 </template>
 
 <script>
 export default {
-  name: "kvizheader"
+  name: "kviz_header"
 };
 </script>

@@ -1,12 +1,12 @@
 <template>
 <div class="body">
-    <kvizheader />
+    <Kvizheader />
     <h1>Hello</h1>
 </div>
 </template>
 
 <script>
-import kvizheader from "@/components/kvizheader.vue";
+import kviz_header from "@/components/kviz_header.vue";
 export default {
     
 }
