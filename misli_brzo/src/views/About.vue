@@ -66,9 +66,21 @@
           </div>
         </div>
       </div>
+      <!-- Footer -->
+      <Footer/>
     </div>
   </div>
 </template>
+
+<script>
+import Footer from "@/components/footer.vue";
+export default {
+  components :{
+    Footer,
+  },
+  
+}
+</script>
 
 <style scoped lang="scss">
 .prvi_blok {
