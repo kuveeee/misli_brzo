@@ -5,31 +5,36 @@
       <h1><b>Bok, Korisnik</b></h1>
       <br />
       <h2>Zaigraj kviz,<br />odaberi jednu od ponuđenih tema</h2>
-
-      
-
-      <div class="teme_kvizova">
-        <img
-          src="@/assets/tema_filmovi.jpg"
-          class=" float-left"
-          alt="Responsive image"
-        />
-        <img
-          src="@/assets/tema_povijest.jpg"
-          class=" float-left"
-          alt="Responsive image"
-        />
-        <img
-          src="@/assets/tema_formula_1.jpg"
-          class=" float-left"
-          alt="Responsive image"
-        />
-        <div class="tema_nedostupna">
+      <div class="row">
+        <div class="col-3">
           <img
-            src="@/assets/tema_tehnologija.jpg"
-            class=" float-left"
+            src="@/assets/tema_filmovi.jpg"
+            class="img-fluid float-left"
             alt="Responsive image"
           />
+        </div>
+        <div class="col-3">
+          <img
+            src="@/assets/tema_povijest.jpg"
+            class="img-fluid float-left"
+            alt="Responsive image"
+          />
+        </div>
+        <div class="col-3">
+          <img
+            src="@/assets/tema_formula_1.jpg"
+            class="img-fluid float-left"
+            alt="Responsive image"
+          />
+        </div>
+        <div class="col-3">
+          <div class="tema_nedostupna">
+            <img
+              src="@/assets/tema_tehnologija.jpg"
+              class="img-fluid float-left"
+              alt="Responsive image"
+            />
+          </div>
         </div>
       </div>
       <!-- Teme kvizova -->
@@ -84,7 +89,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 h1 {
   font-size: 90px;
   color: #1f1235;
@@ -93,9 +97,6 @@ h1 {
 h2 {
   font-size: 30px;
   color: #1b1425;
-}
-
-.teme_kvizova {
 }
 
 img {
