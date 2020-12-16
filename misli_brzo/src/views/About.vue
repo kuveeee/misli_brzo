@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container ">
     <!-- Drugi dio stranice -->
     <div class="prvi_blok">
       <h1><b>Bok, Korisnik</b></h1>
@@ -37,7 +37,12 @@
           </div>
         </div>
       </div>
-      <!-- Teme kvizova -->
+      <!-- row -->
+
+      <div class="zagonetke_cinjenice">
+        <h4>Dolje se nalaze zagonetke i zanimljive činjenice</h4>
+      </div>
+
     </div>
     <!-- Prvi blok -->
 
@@ -89,6 +94,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+.container{
+}
+.prvi_blok{
+  height: 100vh;
+}
+
 h1 {
   font-size: 90px;
   color: #1f1235;
@@ -100,18 +112,24 @@ h2 {
 }
 
 img {
-  width: 15%;
+  width: 80%;
   padding-top: 75px;
-  padding-inline: 15px;
+  //padding-inline: 10px;
 }
 .tema_nedostupna {
   opacity: 50%;
 }
 
+//Dolje se nalaze zagonetke i zanimljive činjenice
+.zagonetke_cinjenice {
+  position: absolute;
+  bottom: 5px;
+}
+
 //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona
 .drugi_blok {
   color: white;
-  height: 1080px;
+  height: 100vh;
   background-image: linear-gradient(#ee96c1, #ec358f);
   padding-top: 50px;
   padding-left: 80px;

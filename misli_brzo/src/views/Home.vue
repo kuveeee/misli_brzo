@@ -29,7 +29,7 @@
       <div class="ukratko_o_kreatorima_i_projektu">
         <h4>Ukratko o kreatorima i projektu</h4>
       </div>
-    </div>
+    </div> <!-- container_1 -->
 
     <!-- Drugi dio stranice -->
     <div class="container_2">
@@ -67,7 +67,7 @@
         </ul>
       </div>
       <!-- Footer -->
-      <Footer/>
+      <Footer class=""/>
     </div>
   </div>
 </div>
@@ -88,6 +88,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.home{
+  min-height: 100%;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -102,7 +106,7 @@ a {
 
 //Prvi dio zaslona //Prvi dio zaslona //Prvi dio zaslona //Prvi dio zaslona
 .container_1 {
-  height: 1080px;
+  height: 100vh;
 }
 
 //MisliBrzo naslov
@@ -154,8 +158,8 @@ h5 {
 //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona
 .container_2 {
   color: white;
-  height: 1080px;
-  background-color: #ff6902;
+  height: 100vh;
+  background-image: linear-gradient(#FF6A00, #F0156A);
   padding-left: 80px;
   padding-right: 80px;
   font-size: 20px;
@@ -165,4 +169,5 @@ h5 {
 .text {
   padding-top: 25px;
 }
+
 </style>
