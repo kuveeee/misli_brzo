@@ -50,7 +50,6 @@
       <div class="zagonetke_cinjenice">
         <h4>Dolje se nalaze zagonetke i zanimljive činjenice</h4>
       </div>
-
     </div>
     <!-- Prvi blok -->
 
@@ -89,7 +88,9 @@
       <!-- Footer -->
       <Footer />
     </div>
+    <!-- /Drugi dio stranice -->
   </div>
+  <!-- /Container -->
 </template>
 
 <script>
@@ -102,10 +103,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-.container{
+.container {
 }
-.prvi_blok{
+.prvi_blok {
   height: 100vh;
 }
 
@@ -120,24 +120,24 @@ h2 {
 }
 
 img {
- // width: 80%;
+  // width: 80%;
   //padding-top: 75px;
   //padding-inline: 10px;
 }
 
-.col-3{
-  flex:25%;
+.col-3 {
+  flex: 25%;
   padding: 5px;
-  text-align:center;
-  display:block;
+  text-align: center;
+  display: block;
   background-color: transparent;
   border: 1px solid transparent;
   margin-right: 10px;
   margin-bottom: 1px;
-  float:left;
+  float: left;
 }
-.row::after{
-  width:965px;
+.row::after {
+  width: 965px;
   content: "";
   clear: both;
   display: flex;
@@ -148,7 +148,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   color: red;
-
 }
 .tema_nedostupna {
   opacity: 50%;

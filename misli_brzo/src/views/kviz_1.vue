@@ -11,16 +11,16 @@
         <img src="@/assets/tema_formula_1.svg" alt="Formula 1 car" />
       </div> -->
 
-    <div class="odgovor align-middle w-25">
+    <div class="odgovor">
       <p>Odgovor A</p>
     </div>
-    <div class="odgovor w-25">
+    <div class="odgovor">
       <p>Odgovor B</p>
     </div>
-    <div class="odgovor w-25">
+    <div class="odgovor">
       <p>Odgovor C</p>
     </div>
-    <div class="odgovor w-25">
+    <div class="odgovor">
       <p>Odgovor D</p>
     </div>
   </div>
@@ -35,14 +35,20 @@ export default {};
   background-color: #9d5cc2;
   height: 100vh;
 }
+h1{
+  -webkit-text-stroke: 2px;
+}
 .pitanje {
   background-color: #804aa0;
+  color: #C2A7D2;
+  border-radius: 10px;
 }
 .odgovor {
   background-color: white;
-  /* width: 200px; */
+  color: #727272;
+  width: 20%;
   height: 40px;
   margin-top: 25px;
-  margin-bottom: 10px;
+  border-radius: 10px;
 }
 </style>
