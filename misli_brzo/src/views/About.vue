@@ -1,6 +1,6 @@
 <template>
   <div class="container ">
-    <!-- Prvi dio stranice -->
+    <!-- Drugi dio stranice -->
     <div class="prvi_blok">
       <h1><b>Bok, Korisnik</b></h1>
       <br />
@@ -11,27 +11,21 @@
             src="@/assets/tema_filmovi.jpg"
             class="img-fluid float-left"
             alt="Responsive image"
-            style="width:100%"
           />
-          <p>Film i televizija</p>
         </div>
         <div class="col-3">
           <img
             src="@/assets/tema_povijest.jpg"
             class="img-fluid float-left"
             alt="Responsive image"
-            style="width:100%"
           />
-          <p>Povijest</p>
         </div>
         <div class="col-3">
           <img
             src="@/assets/tema_formula_1.jpg"
             class="img-fluid float-left"
             alt="Responsive image"
-            style="width:100%"
           />
-          <p>Formula 1</p>
         </div>
         <div class="col-3">
           <div class="tema_nedostupna">
@@ -39,15 +33,13 @@
               src="@/assets/tema_tehnologija.jpg"
               class="img-fluid float-left"
               alt="Responsive image"
-              style="width:100%"
             />
-            <div class="centered"><b>Nedostupno</b></div>
           </div>
         </div>
       </div>
       <!-- row -->
 
-      <div class="zagonetke_cinjenice">
+      <div class="zagonetke_cinjenice col-12">
         <h4>Dolje se nalaze zagonetke i zanimljive činjenice</h4>
       </div>
     </div>
@@ -120,34 +112,9 @@ h2 {
 }
 
 img {
-  // width: 80%;
-  //padding-top: 75px;
+  width: 80%;
+  padding-top: 75px;
   //padding-inline: 10px;
-}
-
-.col-3 {
-  flex: 25%;
-  padding: 5px;
-  text-align: center;
-  display: block;
-  background-color: transparent;
-  border: 1px solid transparent;
-  margin-right: 10px;
-  margin-bottom: 1px;
-  float: left;
-}
-.row::after {
-  width: 965px;
-  content: "";
-  clear: both;
-  display: flex;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: red;
 }
 .tema_nedostupna {
   opacity: 50%;
@@ -162,7 +129,7 @@ img {
 //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona
 .drugi_blok {
   color: white;
-  height: 1080px;
+  height: 100vh;
   background-image: linear-gradient(#ee96c1, #ec358f);
   padding-top: 50px;
   padding-left: 80px;
