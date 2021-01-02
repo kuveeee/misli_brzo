@@ -1,76 +1,79 @@
 <template>
   <div class="home">
     <div class="hello">
-    <div class="container_1">
-      <h1><strong>MisliBrzo</strong></h1>
-      <div class="controller_slika">
-        <img src="@/assets/game-controller.svg" alt="Game controller image" />
-      </div>
-      <h2><strong>Uči kroz zabavu</strong></h2>
-      <div class="o_stranici">
-        <h3>
-          MisliBrzo je web stranica na kojoj ćeš moći obogatiti svoje zanje
-          <br />
-          Ovdje ćemo kroz kvizove, zanimljive činjenice, zagonetke i kratke
-          tekstove testirati vaše znanje. <br />Da bi pratili vaš napredak,
-          molimo vas da se prijavite putem Google-a. Nakon toga,<br />stranica
-          će vas odvesti na početni izbornik gdje ćete moći početi vašu
-          "MisliBrzo" avanturu.
-        </h3>
-      </div>
-
-      <!-- Button za prijavu -->
-      <div class="prijava">
-        <div class="button">
-          <button type="button">Započni</button>
+      <div class="container_1">
+        <h1><strong>MisliBrzo</strong></h1>
+        <div class="controller_slika">
+          <img src="@/assets/game-controller.svg" alt="Game controller image" />
         </div>
-        <p>Google prijava</p>
-      </div>
-      <div class="ukratko_o_kreatorima_i_projektu">
-        <h4>Ukratko o kreatorima i projektu</h4>
-      </div>
-    </div> <!-- container_1 -->
+        <h2><strong>Uči kroz zabavu</strong></h2>
+        <div class="o_stranici">
+          <h3>
+            MisliBrzo je web stranica na kojoj ćeš moći obogatiti svoje zanje
+            <br />
+            Ovdje ćemo kroz kvizove, zanimljive činjenice, zagonetke i kratke
+            tekstove testirati vaše znanje. <br />Da bi pratili vaš napredak,
+            molimo vas da se prijavite putem Google-a. Nakon toga,<br />stranica
+            će vas odvesti na početni izbornik gdje ćete moći početi vašu
+            "MisliBrzo" avanturu.
+          </h3>
+        </div>
 
-    <!-- Drugi dio stranice -->
-    <div class="container_2">
-      <div class="text">
-        <ul>
-          <h5>O stranici</h5>
-          <li>
-            <p>
-              Stranica je napravljena kao projekt za kolegij "Programsko
-              inženjerstvo" akademske godine 2020./2021. kod doc. dr. sc. Nikola
-              Tanković.
-            </p>
-          </li>
-
-          <h5>Cilj stranice</h5>
-          <li>
-            <p>
-              Naš cilj je našim korisnicima pružiti zabavnu web lokaciju na
-              kojoj će testirati svoje znanje na kvizovima, te naučiti i
-              proširiti znanje sa zabavnim činjenicama, kratkim tekstovima i
-              zagonetkama. Mi mislimo da će kroz našu stranicu svaka osoba moći
-              u roku 10-15min naučiti nešto što nisu možda znali, proširiti već
-              postojeće znanje ili ga samo testirati.
-            </p>
-          </li>
-
-          <h5>O nama</h5>
-          <li>
-            <p>
-              Mi smo dva studenta 3.godine Fakulteta Informatike u Puli.
-              Izradili smo ovu stranicu u svrhu projekta, ali isto tako da
-              testiramo naše znanje i sposobnosti.
-            </p>
-          </li>
-        </ul>
+        <!-- Button za prijavu -->
+        <div class="prijava">
+          <div class="button">
+            <button type="button">Započni</button>
+          </div>
+          <p>Google prijava</p>
+        </div>
+        
+        <div class="ukratko_o_kreatorima_i_projektu">
+          <h4>Ukratko o kreatorima i projektu</h4>
+        </div>
       </div>
-      <!-- Footer -->
-      <Footer class=""/>
+      <!-- container_1 -->
+
+      <!-- Drugi dio stranice -->
+      <div class="container_2">
+        <div class="text">
+          <ul>
+            <h5>O stranici</h5>
+            <li>
+              <p>
+                Stranica je napravljena kao projekt za kolegij "Programsko
+                inženjerstvo" akademske godine 2020./2021. kod doc. dr. sc.
+                Nikola Tanković.
+              </p>
+            </li>
+            <br /><br />
+            <h5>Cilj stranice</h5>
+            <li>
+              <p>
+                Naš cilj je našim korisnicima pružiti zabavnu web lokaciju na
+                kojoj će testirati svoje znanje na kvizovima, te naučiti i
+                proširiti znanje sa zabavnim činjenicama, kratkim tekstovima i
+                zagonetkama. Mi mislimo da će kroz našu stranicu svaka osoba
+                moći u roku 10-15min naučiti nešto što nisu možda znali,
+                proširiti već postojeće znanje ili ga samo testirati.
+              </p>
+            </li>
+            <br /><br />
+            <h5>O nama</h5>
+            <li>
+              <p>
+                Mi smo dva studenta 3.godine Fakulteta Informatike u Puli.
+                Izradili smo ovu stranicu u svrhu projekta, ali isto tako da
+                testiramo naše znanje i sposobnosti.
+              </p>
+            </li>
+          </ul>
+          <br /><br />
+        </div>
+        <!-- Footer -->
+        <Footer class="" />
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -88,7 +91,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.home{
+.home {
   min-height: 100%;
 }
 
@@ -117,6 +120,7 @@ h1 {
 
 //Uci kroz zabavu podnaslov
 h2 {
+  display: inline-block;
   font-size: 45px;
   color: #1b1425;
 }
@@ -134,6 +138,9 @@ h5 {
 
 //Slika gaming controllera
 .controller_slika {
+  display: inline-block;
+  position:relative;
+  left: -200px;
   width: 10%;
   transform: rotate(-30deg);
 }
@@ -142,7 +149,7 @@ h5 {
 //}
 
 .prijava {
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 .o_stranici {
@@ -151,7 +158,6 @@ h5 {
 }
 
 .ukratko_o_kreatorima_i_projektu {
-  position: absolute;
   bottom: 5px;
 }
 
@@ -159,7 +165,7 @@ h5 {
 .container_2 {
   color: white;
   height: 100vh;
-  background-image: linear-gradient(#FF6A00, #F0156A);
+  background-image: linear-gradient(#ff6a00, #f0156a);
   padding-left: 80px;
   padding-right: 80px;
   font-size: 20px;
@@ -169,5 +175,4 @@ h5 {
 .text {
   padding-top: 25px;
 }
-
 </style>

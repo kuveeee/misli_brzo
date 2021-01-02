@@ -7,8 +7,10 @@
     </div>
 
     <h2>Kviz FILMOVI</h2>
-    <div class="pitanje d-flex w-50">
+    <div class="container">
+    <div class="pitanje d-flex justify-content-center">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+    </div>
     </div>
     <!-- Pitanje -->
 
@@ -45,11 +47,11 @@ export default {};
 .izlaz{
 }
 h1 {
-  -webkit-text-stroke: 2px;
   margin: auto;
   width: 50%;
 }
 .pitanje {
+  justify-content: center; //poravnati text na sredinu containera
   background-color: #804aa0;
   color: #c2a7d2;
   border-radius: 10px;
