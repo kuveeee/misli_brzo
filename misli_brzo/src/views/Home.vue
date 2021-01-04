@@ -158,6 +158,7 @@ h5 {
 }
 
 .ukratko_o_kreatorima_i_projektu {
+  position: absolute;
   bottom: 5px;
 }
 

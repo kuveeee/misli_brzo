@@ -10,22 +10,27 @@
           <img
             src="@/assets/tema_filmovi.jpg"
             class="img-fluid float-left"
-            alt="Responsive image"
+            alt=""
           />
+          <div class="naslov_teme">
+            <p>tema 1</p>
+          </div>
         </div>
         <div class="col-3">
           <img
             src="@/assets/tema_povijest.jpg"
             class="img-fluid float-left"
-            alt="Responsive image"
+            alt=""
           />
+          <p>tema 2</p>
         </div>
         <div class="col-3">
           <img
             src="@/assets/tema_formula_1.jpg"
             class="img-fluid float-left"
-            alt="Responsive image"
+            alt=""
           />
+          <p>tema 3</p>
         </div>
         <div class="col-3">
           <div class="tema_nedostupna">
@@ -115,6 +120,8 @@ img {
   width: 80%;
   padding-top: 75px;
   //padding-inline: 10px;
+}
+.naslov_teme {
 }
 .tema_nedostupna {
   opacity: 50%;

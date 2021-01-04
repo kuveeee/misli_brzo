@@ -2,7 +2,7 @@
   <div class="body">
     <div class="container">
       <div class="prvi_red">
-        <div class="izlaz col-1"></div>
+        <div class="izlaz"></div>
         <a href="/about">Izlaz</a>
         <h1>MisliBrzo</h1>
       </div>
@@ -14,10 +14,10 @@
         </div>
       </div>
       <!-- Pitanje -->
-      <div class="odgovor d-flex justify-content-center">
+      <div class="odgovor">
         <p>Odgovor A</p>
       </div>
-      <div class="odgovor d-flex justify-content-center">
+      <div class="odgovor">
         <p>Odgovor B</p>
       </div>
       <div class="odgovor">
@@ -26,7 +26,6 @@
       <div class="odgovor">
         <p>Odgovor D</p>
       </div>
-
       <div class="formula_1_svg">
         <img src="@/assets/tema_formula_1.svg" alt="Formula 1 car" />
       </div>
