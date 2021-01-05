@@ -1,6 +1,6 @@
 <template>
   <div class="container ">
-    <!-- Drugi dio stranice -->
+    <!-- Prvi dio stranice -->
     <div class="prvi_blok">
       <h1><b>Bok, Korisnik</b></h1>
       <br />
@@ -11,6 +11,7 @@
             src="@/assets/tema_filmovi.jpg"
             class="img-fluid float-left"
             alt=""
+            style="width:100%"
           />
           <div class="naslov_teme">
             <p>tema 1</p>
@@ -21,6 +22,7 @@
             src="@/assets/tema_povijest.jpg"
             class="img-fluid float-left"
             alt=""
+            style="width:100%"
           />
           <p>tema 2</p>
         </div>
@@ -29,6 +31,7 @@
             src="@/assets/tema_formula_1.jpg"
             class="img-fluid float-left"
             alt=""
+            style="width:100%"
           />
           <p>tema 3</p>
         </div>
@@ -38,8 +41,10 @@
               src="@/assets/tema_tehnologija.jpg"
               class="img-fluid float-left"
               alt="Responsive image"
+              style="width:100%"
             />
           </div>
+          <p>tema nedostupna</p>
         </div>
       </div>
       <!-- row -->
@@ -100,8 +105,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.container {
-}
 .prvi_blok {
   height: 100vh;
 }
@@ -117,20 +120,26 @@ h2 {
 }
 
 img {
-  width: 80%;
-  padding-top: 75px;
-  //padding-inline: 10px;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
-.naslov_teme {
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
+
 .tema_nedostupna {
   opacity: 50%;
 }
 
 //Dolje se nalaze zagonetke i zanimljive činjenice
 .zagonetke_cinjenice {
-  position: absolute;
+  //position: absolute;
   bottom: 5px;
+  padding-top: 200px;
 }
 
 //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona

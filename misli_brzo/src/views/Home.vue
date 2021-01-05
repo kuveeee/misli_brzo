@@ -118,7 +118,7 @@ h1 {
   color: #1f1235;
 }
 
-//Uci kroz zabavu podnaslov
+//   UCI KROZ ZABAVU   -podnaslov
 h2 {
   display: inline-block;
   font-size: 45px;
@@ -158,8 +158,11 @@ h5 {
 }
 
 .ukratko_o_kreatorima_i_projektu {
-  position: absolute;
+  //position: absolute;
   bottom: 5px;
+  padding-left: 10px;
+  padding-top: 50px;
+  text-align: center;
 }
 
 //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona

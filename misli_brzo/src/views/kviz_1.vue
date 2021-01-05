@@ -9,7 +9,7 @@
 
       <h2>FILMOVI</h2>
       <div class="container">
-        <div class="pitanje d-flex justify-content-center">
+        <div class="pitanje">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
         </div>
       </div>
@@ -41,11 +41,8 @@ export default {};
 <style scoped lang="scss">
 .body {
   background-color: #9d5cc2;
-  height: 100vh;
 }
-.prvi_red {
 
-}
 .izlaz {
 }
 h1 {
@@ -61,7 +58,6 @@ h2{
 .pitanje {
   background-color: #804aa0;
   color: #c2a7d2;
-  width: 50%;
   border-radius: 10px;
   padding: 5px;
   font-size: 25px;
@@ -70,12 +66,12 @@ img {
   width: 40%;
   opacity: 25%;
   transform: rotate(-90deg);
+  padding-top: 20px;
   display: inline;
 }
 .odgovor {
   background-color: white;
   color: #9D5CC2;
-  width: 18%;
   height: 35px;
   margin-top: 25px;
   border-radius: 15px;
