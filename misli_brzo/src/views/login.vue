@@ -30,7 +30,7 @@
                 placeholder="Password"
               />
             </div>
-            <button type="button" @click="login" class="btn btn-primary">
+            <button type="button" @click="login()" class="btn btn-primary">
               Submit
             </button>
           </form>
@@ -42,7 +42,6 @@
 </template>
 
 <script>
-import { firebase } from "@/firebase";
 export default {
   name: "login",
   data() {
@@ -51,19 +50,19 @@ export default {
       password: "",
     };
   },
+
   methods: {
     login() {
+      console.log("login..." + this.username);
       firebase
         .auth()
         .signInWithEmailAndPassword(this.username, this.password)
         .then(function() {
           console.log("Uspješna prijava");
-          window.location = '/about' //Redirectanje na About stranicu nakon uspješne prijave
         })
-        .catch(function() {
-          console.error("Doslo je do greske", error);
+        .catch(function(e) {
+          console.error("Greška", e);
         });
-      console.log("Nastavak");
     },
   },
 };
