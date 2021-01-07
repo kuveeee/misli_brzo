@@ -42,6 +42,7 @@
 </template>
 
 <script>
+import { firebase } from "@/firebase";
 export default {
   name: "login",
   data() {
@@ -54,11 +55,14 @@ export default {
   methods: {
     login() {
       console.log("login..." + this.username);
+      console.log(this.$rounter);
+
       firebase
         .auth()
         .signInWithEmailAndPassword(this.username, this.password)
-        .then(function() {
-          console.log("Uspješna prijava");
+        .then((result) => {
+          console.log("Uspješna prijava", result);
+          this.$router.replace({ name: 'Splash'});//Redirect
         })
         .catch(function(e) {
           console.error("Greška", e);

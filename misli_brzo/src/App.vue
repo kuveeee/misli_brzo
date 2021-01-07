@@ -7,11 +7,15 @@
       <router-link to="/Login">Login</router-link> |
       <router-link to="/kviz_1">Kviz 1</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
-<style lang="scss">
 
+<script>
+
+</script>
+
+<style lang="scss">
 #app {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,10 +24,8 @@
   color: #2c3e50;
   padding: 0px;
 }
-
 #nav {
   padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;
