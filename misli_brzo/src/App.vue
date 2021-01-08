@@ -5,13 +5,41 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/signup">Signup</router-link> |
       <router-link to="/Login">Login</router-link> |
-      <router-link to="/kviz_1">Kviz 1</router-link>
+      <router-link to="/kviz_1">Kviz 1</router-link> |
+      <a href="#" @click="logout" class="nav-link">Logout</a>
     </div>
     <router-view />
   </div>
 </template>
 
 <script>
+import { firebase } from "@/firebase";
+
+firebase.auth().onAuthStateChanged((user) => {
+  //Metoda koja prati jel user prijavljen ili odjavljen
+  if (user) {
+    // User is signed in.
+    console.log("***", user.mail);
+  } else {
+    // No user is signed in.
+    console.log("*** No user");
+  }
+});
+
+export default {
+  name: "App",
+
+  methods: {
+    logout() {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          this.$router.push({ name: "Splash" });
+        });
+    },
+  },
+};
 </script>
 
 <style lang="scss">
