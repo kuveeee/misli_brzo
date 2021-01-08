@@ -13,7 +13,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
         </div>
       </div>
-      <!-- Pitanje -->
+      <!-- container -->
       <div class="odgovor">
         <p>Odgovor A</p>
       </div>
