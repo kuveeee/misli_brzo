@@ -123,6 +123,7 @@ h2 {
   display: inline-block;
   font-size: 45px;
   color: #1b1425;
+  text-align: center;
 }
 
 h3 {
@@ -144,9 +145,6 @@ h5 {
   width: 10%;
   transform: rotate(-30deg);
 }
-
-//<!--.button {
-//}
 
 .prijava {
   padding-top: 30px;

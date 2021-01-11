@@ -2,8 +2,9 @@
   <div class="body">
     <div class="container">
       <div class="prvi_red">
-        <div class="izlaz"></div>
+        <div class="izlaz">
         <a href="/about">Izlaz</a>
+        </div>
         <h1>MisliBrzo</h1>
       </div>
 
@@ -44,6 +45,7 @@ export default {};
 }
 
 .izlaz {
+  text-align: right;
 }
 h1 {
   margin: auto;
