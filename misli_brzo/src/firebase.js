@@ -16,5 +16,3 @@ var firebaseConfig = {
   export {
       firebase,
   };
-
-  
