@@ -42,10 +42,11 @@ export default {};
 <style scoped lang="scss">
 .body {
   background-color: #9d5cc2;
+  height: 100vh;
 }
 
 .izlaz {
-  text-align: right;
+  float: right;
 }
 h1 {
   margin: auto;
@@ -68,8 +69,13 @@ img {
   width: 40%;
   opacity: 25%;
   transform: rotate(-90deg);
-  padding-top: 20px;
-  display: inline;
+}
+img.center
+{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
 }
 .odgovor {
   background-color: white;
