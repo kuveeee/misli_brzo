@@ -4,17 +4,16 @@
     <div class="prvi_blok">
       <h1><b>Bok, Korisnik</b></h1>
       <br />
-      <h2>Zaigraj kviz,<br />odaberi jednu od ponuđenih tema</h2>
+      <h2>Odaberi jednu od ponuđenih tema,<br /> te zaigraj kviz</h2>
       <div class="row">
         <div class="col-3">
           <img
             src="@/assets/tema_filmovi.jpg"
             class="img-fluid float-left"
             alt=""
-            style="width:100%"
           />
           <div class="naslov_teme">
-            <p>tema 1</p>
+            <p>Film i televizija</p>
           </div>
         </div>
         <div class="col-3">
@@ -22,18 +21,16 @@
             src="@/assets/tema_povijest.jpg"
             class="img-fluid float-left"
             alt=""
-            style="width:100%"
           />
-          <p>tema 2</p>
+          <p>Povijest</p>
         </div>
         <div class="col-3">
           <img
             src="@/assets/tema_formula_1.jpg"
             class="img-fluid float-left"
             alt=""
-            style="width:100%"
           />
-          <p>tema 3</p>
+          <p>Formula1</p>
         </div>
         <div class="col-3">
           <div class="tema_nedostupna">
@@ -41,10 +38,9 @@
               src="@/assets/tema_tehnologija.jpg"
               class="img-fluid float-left"
               alt="Responsive image"
-              style="width:100%"
             />
           </div>
-          <p>tema nedostupna</p>
+          <p>Nedostupno</p>
         </div>
       </div>
       <!-- row -->
@@ -58,9 +54,9 @@
     <!-- Drugi dio stranice -->
     <div class="drugi_blok">
       <div class="zanimljive_činjenice">
-        <h3><b>Zanimljive činjenice</b></h3>
+        <h4><b>Zanimljive činjenice</b></h4>
         <div class="naslov_zanimljivosti">
-          <h4>Naslov zanimljivosti</h4>
+          <h3> Naslov</h3>
           <!--o čemu govore tjedne zanjmiljovsti, npr voda-->
         </div>
         <ol>
@@ -105,12 +101,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .prvi_blok {
   height: 100vh;
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 60px;
   color: #1f1235;
 }
 
@@ -121,14 +118,7 @@ h2 {
 
 img {
   float: left;
-  width: 33.33%;
   padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 .tema_nedostupna {
