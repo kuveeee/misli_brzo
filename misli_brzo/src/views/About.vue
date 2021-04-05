@@ -4,7 +4,7 @@
     <div class="prvi_blok">
       <h1><b>Bok, Korisnik</b></h1>
       <br />
-      <h2>Odaberi jednu od ponuđenih tema,<br /> te zaigraj kviz</h2>
+      <h2>odaberi jednu od ponuđenih tema,<br /> te zaigraj kviz</h2>
       <div class="row">
         <div class="col-3">
           <img
