@@ -2,7 +2,7 @@
   <div class="home">
     <div class="hello">
       <div class="container_1">
-        <h1><strong>MisliBrzo</strong></h1>
+        <h1>MisliBrzo</h1>
         <div class="controller_slika">
           <img src="@/assets/game-controller.svg" alt="Game controller image" />
         </div>
@@ -19,10 +19,10 @@
           </h3>
         </div>
 
-        <!-- Button za prijavu -->
+        <!-- Button za registraciju -->
         <div class="prijava">
           <div class="button">
-            <button type="button">Započni</button>
+            <button type="button">Registriraj se</button>
           </div>
           <p>Google prijava</p>
         </div>
@@ -114,40 +114,48 @@ a {
 
 //MisliBrzo naslov
 h1 {
-  font-size: 110px;
+  font-size: 90px;
   color: #1f1235;
 }
 
 //   UCI KROZ ZABAVU   -podnaslov
 h2 {
   display: inline-block;
-  font-size: 45px;
+  font-size: 38px;
   color: #1b1425;
   text-align: center;
 }
 
 h3 {
   margin: 40px 0 0;
-  font-size: 20px;
-  color: #000000;
+  font-size: 15px;
+  color: #272727;
 }
 
 // h5 - podnaslovi (O stranici, Cilj stranice, O nama)
 h5 {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 //Slika gaming controllera
 .controller_slika {
   display: inline-block;
   position:relative;
-  left: -200px;
+  left: -300px;
   width: 10%;
   transform: rotate(-30deg);
 }
 
 .prijava {
   padding-top: 30px;
+}
+
+button{
+  color: white;
+  background-color: #250058;
+  border-radius: 15px;
+  padding: 3px 18px;
+  font-size: 20px;
 }
 
 .o_stranici {
@@ -176,5 +184,6 @@ h5 {
 
 .text {
   padding-top: 25px;
+  font-size: 18px;
 }
 </style>
