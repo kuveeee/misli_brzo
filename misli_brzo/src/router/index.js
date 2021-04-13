@@ -29,7 +29,7 @@ const routes = [
     path: '/kviz_1',
     name: 'Kviz 1',
     component: () => import(/* webpackChunkName: "kviz_1" */ '../views/kviz_1.vue')
-  }
+  },
 ]
 
 const router = new VueRouter({
