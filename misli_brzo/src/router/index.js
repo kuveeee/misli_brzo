@@ -30,6 +30,11 @@ const routes = [
     name: 'Kviz 1',
     component: () => import(/* webpackChunkName: "kviz_1" */ '../views/kviz_1.vue')
   },
+  {
+    path: '/kviz_test',
+    name: 'kviz_test',
+    component: () => import(/* webpackChunkName: "kviz_1" */ '../views/kviz_test.vue')
+  },
 ]
 
 const router = new VueRouter({
