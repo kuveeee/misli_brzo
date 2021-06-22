@@ -4,11 +4,10 @@
     <div class="prvi_blok">
       <h1><b>Bok, Korisnik</b></h1>
       <br />
-<<<<<<< HEAD
-      <h2>odaberi jednu od ponuđenih tema,<br /> te zaigraj kviz</h2>
-=======
-      <h2>Odaberi jednu od ponuđenih tema,<br /> te zaigraj kviz</h2>
->>>>>>> parent of b6d18f0 (Revert "firestore imp")
+      <h2>Zaigraj kviz</h2>
+      <div class="button">
+            <button onclick="window.location.href='/signup'">Registriraj se</button>
+          </div>
       <div class="row">
         <div class="col-3">
           <img
@@ -118,6 +117,14 @@ h1 {
 h2 {
   font-size: 30px;
   color: #1b1425;
+}
+
+button{
+  color: white;
+  background-color: #250058;
+  border-radius: 15px;
+  padding: 3px 18px;
+  font-size: 20px;
 }
 
 img {

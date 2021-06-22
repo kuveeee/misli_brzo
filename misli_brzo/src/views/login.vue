@@ -1,13 +1,13 @@
 <template>
   <div class="about">
-    <h1>This is an login page</h1>
+    <h1>Prijava</h1>
     <div class="container">
       <div class="row">
         <div class="col-sm"></div>
         <div class="col-sm">
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
+              <label for="exampleInputEmail1">Email addresa</label>
               <input
                 type="email"
                 v-model="username"
@@ -16,12 +16,9 @@
                 aria-describedby="emailHelp"
                 placeholder="Enter email"
               />
-              <small id="emailHelp" class="form-text text-muted"
-                >We'll never share your email with anyone else.</small
-              >
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
+              <label for="exampleInputPassword1">Zaporka</label>
               <input
                 type="password"
                 v-model="password"
@@ -31,7 +28,7 @@
               />
             </div>
             <button type="button" @click="login()" class="btn btn-primary">
-              Submit
+              Nastavi
             </button>
           </form>
         </div>
@@ -42,7 +39,7 @@
 </template>
 
 <script>
-//import { firebase } from "@/firebase";
+import { firebase } from "@/firebase";
 export default {
   name: "login",
   data() {
@@ -71,3 +68,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h1{
+  padding-bottom: 60px;
+}
+</style>

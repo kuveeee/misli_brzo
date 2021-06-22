@@ -22,9 +22,8 @@
         <!-- Button za registraciju -->
         <div class="prijava">
           <div class="button">
-            <button type="button">Registriraj se</button>
+            <button onclick="window.location.href='/signup'">Registriraj se</button>
           </div>
-          <p>Google prijava</p>
         </div>
         
         <div class="ukratko_o_kreatorima_i_projektu">
@@ -164,7 +163,7 @@ button{
 }
 
 .ukratko_o_kreatorima_i_projektu {
-  //position: absolute;
+  position: absolute;
   bottom: 5px;
   padding-left: 10px;
   padding-top: 50px;

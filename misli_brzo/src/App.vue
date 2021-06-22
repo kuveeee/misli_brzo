@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Splash</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link v-if="!store.currentUser" to="/signup">Signup</router-link> |  
-      <router-link v-if="!store.currentUser" to="/Login">Login</router-link> |
-      <router-link to="/kviz_1">Kviz 1</router-link> |
-      <a v-if="store.currentUser" href="#" @click="logout" class="nav-link">Logout</a>
+      <router-link to="/">Početna</router-link> |
+      <router-link to="/about">Igra</router-link> |
+      <router-link v-if="!store.currentUser" to="/signup">Registracija</router-link> |  
+      <router-link v-if="!store.currentUser" to="/Login">Prijava</router-link> |
+      <router-link to="/kviz_test">Kviz Test</router-link> |
+      <a v-if="store.currentUser" href="#" @click="logout" class="nav-link">Odjava</a>
     </div>
     <router-view />
   </div>
@@ -19,11 +19,11 @@ import { firebase } from "@/firebase";
 firebase.auth().onAuthStateChanged((user) => {
   //Metoda koja prati jel user prijavljen ili odjavljen
   if (user) {
-    // User is signed in.
+    // Korisnik je prijavljen.
     console.log("***", user.email);
     store.currentUser = user.email;
   } else {
-    // No user is signed in.
+    // Korisnik nije prijavljen.
     console.log("*** No user");
     store.currentUser = '';
   }
