@@ -2,13 +2,12 @@
   <div class="container ">
     <!-- Prvi dio stranice -->
     <div class="prvi_blok">
-      <h1><b>Bok, Korisnik</b></h1>
+      <h1><b>Bok</b></h1>
       <br />
-      <h2>Zaigraj kviz</h2>
       <div class="button">
-            <button onclick="window.location.href='/signup'">Registriraj se</button>
+            <button onclick="window.location.href='/kviz_test'">Zaigraj kviz</button>
           </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-3">
           <img
             src="@/assets/tema_filmovi.jpg"
@@ -45,12 +44,9 @@
           </div>
           <p>Nedostupno</p>
         </div>
-      </div>
+      </div> -->
       <!-- row -->
 
-      <div class="zagonetke_cinjenice col-12">
-        <h4>Dolje se nalaze zagonetke i zanimljive činjenice</h4>
-      </div>
     </div>
     <!-- Prvi blok -->
 
@@ -106,7 +102,7 @@ export default {
 <style scoped lang="scss">
 
 .prvi_blok {
-  height: 100vh;
+  height: 50vh;
 }
 
 h1 {
@@ -121,8 +117,9 @@ h2 {
 
 button{
   color: white;
-  background-color: #250058;
+  background-color: #EE8EBD;
   border-radius: 15px;
+  border-color: #EE8EBD;
   padding: 3px 18px;
   font-size: 20px;
 }

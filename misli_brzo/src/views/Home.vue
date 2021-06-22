@@ -153,6 +153,7 @@ button{
   color: white;
   background-color: #250058;
   border-radius: 15px;
+  border-color: #250058;
   padding: 3px 18px;
   font-size: 20px;
 }
