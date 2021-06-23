@@ -83,7 +83,7 @@
         </div>
       </div>
       <!-- Footer -->
-      <Footer />
+      <!-- <Footer /> -->
     </div>
     <!-- /Drugi dio stranice -->
   </div>

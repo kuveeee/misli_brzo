@@ -5,7 +5,6 @@
       <router-link to="/about">Igra</router-link> |
       <router-link v-if="!store.currentUser" to="/signup">Registracija</router-link> |  
       <router-link v-if="!store.currentUser" to="/Login">Prijava</router-link> |
-      <router-link to="/kviz_test">Kviz Test</router-link> |
       <a v-if="store.currentUser" href="#" @click="logout" class="nav-link">Odjava</a>
     </div>
     <router-view />

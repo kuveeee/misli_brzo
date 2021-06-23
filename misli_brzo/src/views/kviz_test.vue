@@ -9,7 +9,7 @@ var quiz = {
   // Q = QUESTION, O = OPTIONS, A = CORRECT ANSWER
   data: [
   {
-    q : "Koliko titula svijetskog šampiona ima vozač Lewis Hamilton?",
+    q : "Koliko titula svjetskog šampiona ima vozač Lewis Hamilton?",
     o : [
       "8",
       "7",
