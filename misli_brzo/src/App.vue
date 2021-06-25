@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
+      </header>
       <router-link to="/">Početna</router-link> |
       <router-link to="/about">Igra</router-link> |
       <router-link v-if="!store.currentUser" to="/signup">Registracija</router-link> |  
@@ -12,6 +13,7 @@
 </template>
 
 <script>
+//import header from "@/components/header.vue";
 import store from '@/store';
 import { firebase } from "@/firebase";
 

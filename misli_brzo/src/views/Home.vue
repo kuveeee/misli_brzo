@@ -1,39 +1,42 @@
 <template>
   <div class="home">
-    <div class="hello">
       <div class="container_1">
         <h1>MisliBrzo</h1>
         <div class="controller_slika">
           <img src="@/assets/game-controller.svg" alt="Game controller image" />
         </div>
+        <br>
         <h2><strong>Uči kroz zabavu</strong></h2>
         <div class="o_stranici">
           <h3>
-            MisliBrzo je web stranica na kojoj ćeš moći obogatiti svoje zanje
+            MisliBrzo je web stranica na kojoj ćeš moći obogatiti svoje znanje.
             <br />
-            Ovdje ćemo kroz kvizove, zanimljive činjenice, zagonetke i kratke
-            tekstove testirati vaše znanje. <br />Da bi pratili vaš napredak,
-            molimo vas da se prijavite putem Google-a. Nakon toga,<br />stranica
-            će vas odvesti na početni izbornik gdje ćete moći početi vašu
-            "MisliBrzo" avanturu.
+            Ovdje ćemo kroz kvizove, zanimljive činjenice i kratke
+            tekstove testirati vaše znanje. <br />Molimo vas da se registrirate i
+            počnete vašu MisliBrzo avanturu.
           </h3>
         </div>
 
         <!-- Button za registraciju -->
         <div class="prijava">
           <div class="button">
-            <button onclick="window.location.href='/signup'">Registriraj se</button>
+            <button onclick="window.location.href='/signup'">Započni</button>
           </div>
+          <p>Registracija</p>
         </div>
         
         <div class="ukratko_o_kreatorima_i_projektu">
-          <h4>Ukratko o kreatorima i projektu</h4>
+          <h4>Scrollaj dolje i saznaj više o kreatorima i ovom projektu</h4>
         </div>
       </div>
       <!-- container_1 -->
 
       <!-- Drugi dio stranice -->
       <div class="container_2">
+        <div class="humanbrain">
+          <img src="@/assets/human-brain.svg" style="width: 40%" alt="image of a human connected to a computer" />
+        </div>
+
         <div class="text">
           <ul>
             <h5>O stranici</h5>
@@ -68,22 +71,17 @@
           </ul>
           <br /><br />
         </div>
-        <!-- Footer -->
-        <Footer class="" />
       </div>
-    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
-import Footer from "@/components/footer.vue";
 export default {
   name: "Home",
   components: {
     HelloWorld,
-    Footer,
   },
 };
 </script>
@@ -122,13 +120,16 @@ h2 {
   display: inline-block;
   font-size: 38px;
   color: #1b1425;
-  text-align: center;
 }
 
 h3 {
   margin: 40px 0 0;
-  font-size: 15px;
+  font-size: 20px;
   color: #272727;
+}
+
+h4{
+  font-size: 20px;
 }
 
 // h5 - podnaslovi (O stranici, Cilj stranice, O nama)
@@ -140,13 +141,17 @@ h5 {
 .controller_slika {
   display: inline-block;
   position:relative;
-  left: -300px;
-  width: 10%;
+  left: -500px;
+  width: 5%;
   transform: rotate(-30deg);
 }
 
 .prijava {
   padding-top: 30px;
+  p{
+    color: rgb(134, 134, 134);
+    font-size: 15px;
+  }
 }
 
 button{
@@ -156,6 +161,11 @@ button{
   border-color: #250058;
   padding: 3px 18px;
   font-size: 20px;
+}
+
+.humanbrain {
+  height: 1px;
+  opacity:abs($number: 0.1);
 }
 
 .o_stranici {
@@ -180,10 +190,13 @@ button{
   padding-right: 80px;
   font-size: 20px;
   text-align: left;
+  p{
+    font-size: 20px;
+  }
 }
 
 .text {
-  padding-top: 25px;
-  font-size: 18px;
+  padding-top: 100px;
+  font-size: 20px;
 }
 </style>

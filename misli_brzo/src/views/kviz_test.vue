@@ -29,7 +29,7 @@ var quiz = {
     a : 3
   },
   {
-    q : "Koja je največa životinja na planeti?",
+    q : "Koja je najveća životinja na planeti?",
     o : [
       "Kitovski morski pas",
       "Afrički slon",
