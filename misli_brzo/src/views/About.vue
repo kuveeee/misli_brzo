@@ -3,12 +3,16 @@
     <!-- Prvi dio stranice -->
     <div class="prvi_blok">
       <h1><b>Bok</b></h1>
-      <br />
+       <br />
+      
+      <!--                 
       <div class="button">
             <button onclick="window.location.href='/kviz_test'">Zaigraj kviz</button>
-          </div>
-      <!-- <div class="row">
-        <div class="col-3">
+      </div>
+      -->
+      
+       <div class="row">
+         <div class="col-4">
           <img
             src="@/assets/tema_filmovi.jpg"
             class="img-fluid float-left"
@@ -18,33 +22,29 @@
             <p>Film i televizija</p>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-4">
           <img
             src="@/assets/tema_povijest.jpg"
             class="img-fluid float-left"
             alt=""
           />
-          <p>Povijest</p>
-        </div>
-        <div class="col-3">
-          <img
-            src="@/assets/tema_formula_1.jpg"
-            class="img-fluid float-left"
-            alt=""
-          />
-          <p>Formula1</p>
-        </div>
-        <div class="col-3">
-          <div class="tema_nedostupna">
-            <img
-              src="@/assets/tema_tehnologija.jpg"
-              class="img-fluid float-left"
-              alt="Responsive image"
-            />
+          <div class="naslov_teme">
+            <p>Povijest</p>
           </div>
-          <p>Nedostupno</p>
         </div>
-      </div> -->
+        <div class="col-4">
+          <a href="/kviz_formula_1">
+            <img
+              src="@/assets/tema_formula_1.jpg"
+              class="img-fluid float-left"
+              alt=""
+            />
+          </a>
+          <div class="naslov_teme">
+            <p>Formula 1</p>
+          </div>
+        </div>
+      </div>
       <!-- row -->
 
     </div>
@@ -54,19 +54,21 @@
     <div class="drugi_blok">
       <div class="zanimljive_činjenice">
         <h4><b>Zanimljive činjenice</b></h4>
-        <div class="naslov_zanimljivosti">
-          <h3> Naslov</h3>
-          <!--o čemu govore tjedne zanjmiljovsti, npr voda-->
-        </div>
+        <h3>O čovjeku</h3>
         <ol>
-          <li>zanimljivost</li>
-          <li>zanimljivost</li>
-          <li>zanimljivost</li>
+          <div class="water_image">
+            <img
+              src="@/assets/water.svg"
+              alt=""
+            />
+          </div>
+          <li>Voda čini 50-70% našeg tijela,<br>a čak 75% našeg mozga</li>
+          <li>Za žene je potrebno dnevno 2.7l,<br>a za muškarce 3.7l vode.</li>
+          <li>20% dnevnih potreba vode<br>unosimo kroz hranu</li>
         </ol>
 
+        <!--
         <div class="zagonetke">
-          <div class="naslov_zagonetki">
-            <h3><b>Zagonetke</b></h3>
             <div class="naslov_zanimljivosti">
               <h4>
                 Zabavi se i sa nekoliko zagonetki koje možda nisi nikad
@@ -79,8 +81,9 @@
               <li>Zagonetka</li>
               <li>Zagonetka</li>
             </ol>
-          </div>
         </div>
+        -->
+
       </div>
       <!-- Footer -->
       <!-- <Footer /> -->
@@ -102,7 +105,7 @@ export default {
 <style scoped lang="scss">
 
 .prvi_blok {
-  height: 50vh;
+  height: 100vh;
 }
 
 h1 {
@@ -127,17 +130,11 @@ button{
 img {
   float: left;
   padding: 5px;
+  width: 100%;
 }
 
 .tema_nedostupna {
   opacity: 50%;
-}
-
-//Dolje se nalaze zagonetke i zanimljive činjenice
-.zagonetke_cinjenice {
-  //position: absolute;
-  bottom: 5px;
-  padding-top: 200px;
 }
 
 //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona
@@ -153,16 +150,22 @@ img {
 
 h3 {
   //Zanimljive činjenice, Zagonetke
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h4 {
   //Podnaslov za svaki h3 naslov
   font-size: 20px;
   color: #77475e;
+  padding-bottom: 30px;
 }
 .naslov_zanimljivosti {
   padding-bottom: 50px;
+}
+
+.water_image{
+  width: 20%;
+  float: right;
 }
 
 ol {

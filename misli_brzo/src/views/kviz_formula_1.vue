@@ -19,34 +19,34 @@ var quiz = {
     a : 1
   },
   {
-    q : "Pulska Arena je započeta sa gradnjom kojeg stoljeća?",
+    q : "Koliko je vozača na jednoj utrci Formule 1?",
     o : [
-      "6.",
-      "4.",
-      "5.",
-      "1."
-    ],
-    a : 3
-  },
-  {
-    q : "Koja je najveća životinja na planeti?",
-    o : [
-      "Kitovski morski pas",
-      "Afrički slon",
-      "Antarktični plavi kit",
-      "Morski krokodil"
+      "15",
+      "18",
+      "20",
+      "30"
     ],
     a : 2
   },
   {
-    q : "Koji je sedmi planet našeg sunčevog sustava?",
+    q : "Koliko košta jedan Formula 1 bolid?",
     o : [
-      "Uran",
-      "Zemlja",
-      "Pluto",
-      "Mars"
+      "≈ 17 milijuna kuna",
+      "≈ 25 milijuna kuna",
+      "≈ 70 milijuna kuna",
+      "≈ 120 milijuna kuna"
     ],
-    a : 0
+    a : 3
+  },
+  {
+    q : "Formula 1 bolid doseže ubrzanje od 0-200 km/h ispod koliko sekundi?",
+    o : [
+      "2 sekunde",
+      "3 sekunde",
+      "4 sekunde",
+      "5 sekundi"
+    ],
+    a : 3
   },
   
   ],

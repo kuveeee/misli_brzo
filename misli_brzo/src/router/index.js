@@ -31,9 +31,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "kviz_1" */ '../views/kviz_1.vue')
   },
   {
-    path: '/kviz_test',
-    name: 'kviz_test',
-    component: () => import(/* webpackChunkName: "kviz_1" */ '../views/kviz_test.vue')
+    path: '/kviz_formula_1',
+    name: 'kviz_formula_1',
+    component: () => import(/* webpackChunkName: "kviz_1" */ '../views/kviz_formula_1.vue')
   },
 ]
 
