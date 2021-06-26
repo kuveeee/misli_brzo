@@ -2,7 +2,7 @@
   <div class="container ">
     <!-- Prvi dio stranice -->
     <div class="prvi_blok">
-      <h1><b>Bok</b></h1>
+      <h1><b>Odaberi jednu od ponuđenih tema<br>i zaigraj kviz!</b></h1>
        <br />
       
       <!--                 
@@ -47,6 +47,9 @@
       </div>
       <!-- row -->
 
+      <div class="najava">
+          <h4>Scrollaj dolje i pročitaj nekoliko zanimljivih činjenica koje možda nisi znao</h4>
+        </div>
     </div>
     <!-- Prvi blok -->
 
@@ -109,8 +112,9 @@ export default {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
   color: #1f1235;
+  padding-bottom: 30px;
 }
 
 h2 {
@@ -135,6 +139,14 @@ img {
 
 .tema_nedostupna {
   opacity: 50%;
+}
+
+.najava {
+  position: absolute;
+  bottom: 5px;
+  padding-left: 10px;
+  padding-top: 50px;
+  text-align: center;
 }
 
 //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona //Drugi dio zaslona
