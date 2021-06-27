@@ -58,12 +58,13 @@ export default {
         .signInWithEmailAndPassword(this.username, this.password)
         .then((result) => {
           console.log("Uspješna prijava", result);
-          this.$router.replace({ name: "Splash" }); //Redirect
+          this.$router.replace({ name: "About" }); //Redirect
           //replace koristiti prilikom login-a a push za ostale potrebe
         })
         .catch(function(e) {
           console.error("Greška", e);
         });
+        console.log("Nastavak");
     },
   },
 };
